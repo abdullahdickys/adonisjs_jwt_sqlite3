@@ -1,7 +1,7 @@
 'use strict'
+const User = use('App/Models/User');
 
 class AuthController {
-const User = use('App/Models/User');
 	async register({request, auth, response}) {
         const username = request.input("username")
         const email = request.input("email")
